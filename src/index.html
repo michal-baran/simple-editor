@@ -8,20 +8,35 @@
     <title>Prosty edytor</title>
 </head>
 
-<body class="bg-slate-950 text-white flex min-h-screen justify-center items-center" >
+<body class="bg-slate-950 text-white flex min-h-screen justify-center items-center">
     <main class="w-full p-4 max-w-xl">
         <h1 class="text-4xl font-bold mb-4">
             Prosty edytor
         </h1>
-        <textarea class="w-full h-64 mb-4 text-black rounded-lg">
 
-        </textarea>
+        <textarea id="message" class="textarea--js block p-2.5 w-full h-64 mb-4 text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Twoja wiadomość..."></textarea>
         <div class="flex justify-end gap-5">
-            <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Wczytaj</button>
-            <button type="button" class="focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Zapisz</button>
+            <button type="button"
+                class="load-js text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Wczytaj</button>
+            <button type="button"
+                class="save--js focus:outline-none text-white bg-green-700 hover:bg-green-800 focus:ring-4 focus:ring-green-300 font-medium rounded-lg text-sm px-5 py-2.5 dark:bg-green-600 dark:hover:bg-green-700 dark:focus:ring-green-800">Zapisz</button>
         </div>
     </main>
     <script scr="Main.js" type="module"></script>
 </body>
+
+<footer class="fixed bottom-0 left-0 z-20 w-full p-4 bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
+    <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2023 <a href="https://flowbite.com/" class="hover:underline">AMB Control Automatyka przemysłowa</a>. Wszelkie prawa zastrzeżone.
+    </span>
+    <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
+        <li>
+            <a href="#" class="mr-4 hover:underline md:mr-6">O mnie</a>
+        </li>
+        <li>
+            <a href="#" class="hover:underline">Kontakt</a>
+        </li>
+    </ul>
+</footer>
+
 
 </html>
