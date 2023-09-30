@@ -2,10 +2,10 @@
 module.exports = {
   content: [
     "./src/**/*.{html,js,ts,jsx,tsx}",
-    "./node_modules/flowbite/**/*.js"
   ],
   theme: {
     extend: {},
   },
-  plugins: []
+  plugins: [],
+  safelist: ['text-red-500', 'text-blue-500', 'text-green-500']
 }
